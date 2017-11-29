@@ -1,0 +1,23 @@
+<h2><strong>{{title}}</strong></h2>
+<h4><strong>Sections</strong></h4>
+<div *ngIf="clbSections.length > 0">
+  <ol>
+    <li *ngFor = "let section of clbSections">{{section}}
+      <select name="iel_listening" id='ielts_{{section}}' >
+        <option value="">Select</option>
+        <option *ngFor="let rating of clbrating" value={{rating}}>{{ rating }}
+        <option value="3.0">3.0 or less</option>
+      </select>
+
+    </li>
+  </ol>
+<br/>
+<input type="button" class="btn btn-success" value='What is my CLB ?' (click)="GetCLB()" />
+<br/>
+<br/>
+
+<label id='lblTotal' >{{sample}} {{clbtotal}}</label>
+</div>
+<div *ngIf="clbSections.length == 0">
+<label>You did not appear in exam</label>
+</div>
