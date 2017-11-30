@@ -17,7 +17,7 @@ export class ClbService {
 			var iel_final = "";
 
 			if (iel_listening == "" || iel_reading == "" || iel_speaking == "" || iel_writing == "" ) {
-				iel_final = "You must enter all Four values.";
+				iel_final = "You must enter all Four module's value.";
 			} else if (iel_listening <= "4.0" || iel_reading <= "3.0" || iel_speaking <= "3.5" || iel_writing <= "3.5" ) {
 				iel_final = "Your CLB is 3 or less.";
 			} else if (iel_listening <= "4.5" || iel_reading <= "3.5" || iel_speaking <= "4.5" || iel_writing <= "4.5" ) {
