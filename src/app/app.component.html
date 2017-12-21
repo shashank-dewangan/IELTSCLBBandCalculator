@@ -1,13 +1,11 @@
-<div class="container">
+<div class="container ">
     <div class="row" style="padding-top:30px" >
-      <div class="col-sm-12"></div>
+      <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12"></div>
     </div>
     <div class="row well">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10 left">
+      <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1"></div>
+      <div class="col-sm-10 col-xs-10 col-md-10 col-lg-10 left">
           <ul class="nav nav-pills">
-              <!-- <li [class.active] = "appear == 'clb'"><a (click) = "appear = 'clb'">CLB</a></li> -->
-              <!-- <li [class.active] = "appear == 'course'"><a (click) = "appear = 'course'">Courses</a></li> -->
             </ul>
             <div [ngSwitch] = "appear">
               <div *ngSwitchCase="'clb'"><app-clb></app-clb></div>
@@ -15,7 +13,7 @@
               <div *ngSwitchDefault>None</div>
             </div>
       </div>
-      <div class="col-sm-1">
+      <div class="col-sm-1 col-xs-1 col-md-1 col-lg-1">
          
       </div>
         

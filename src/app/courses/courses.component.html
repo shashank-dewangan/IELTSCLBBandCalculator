@@ -1,6 +1,12 @@
 <h4><strong>List of Courses</strong></h4>
 <div >
-  <ol>
+  <ul>
     <li *ngFor = "let course of lstCourse; index as i">{{i}} {{course}}</li>
-  </ol>
+  </ul>
+  <br/>
+  <ul>
+    <li *ngFor = "let course of lstCourse; even as iEven; odd as iOdd">{{i}} {{course}} 
+      <span *ngIf="iEven">(EVEN)</span>
+      <span *ngIf="iOdd">(ODD)</span></li>
+  </ul>
 </div>
